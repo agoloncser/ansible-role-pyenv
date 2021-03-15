@@ -22,3 +22,10 @@
           - "'* 3.8.3' in pyenv_versions.stdout"
           - "'3.7.7' in pyenv_versions.stdout"
           - "'2.7.8' not in pyenv_versions.stdout"
+
+    - name: check installed versions
+      assert:
+        that:
+          - "'* 3.8.3' in pyenv_versions.stdout"
+          - "'3.7.7' in pyenv_versions.stdout"
+          - "'2.7.8' not in pyenv_versions.stdout"
